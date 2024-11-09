@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>חנות בגדים - דרופשיפינג</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>ברוכים הבאים לחנות בגדים</h1>
+    <p>מצא את הפריטים שאתה אוהב והוסף אותם לסל!</p>
+    <div id="cart">
+      <h2>סל הקניות</h2>
+      <ul id="cart-items"></ul>
+      <p>סה"כ מחיר: <span id="total-price">0</span> ₪</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="products">
+      <div class="product-card">
+        <h3>חולצה</h3>
+        <p>מחיר: 50 ₪</p>
+        <button onclick="addToCart('חולצה', 50)">הוסף לסל</button>
+      </div>
+      <div class="product-card">
+        <h3>מכנסיים</h3>
+        <p>מחיר: 80 ₪</p>
+        <button onclick="addToCart('מכנסיים', 80)">הוסף לסל</button>
+      </div>
+      <div class="product-card">
+        <h3>כובע</h3>
+        <p>מחיר: 30 ₪</p>
+        <button onclick="addToCart('כובע', 30)">הוסף לסל</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
